@@ -52,7 +52,7 @@ class data_maniputation:
         tokenizer = RegexpTokenizer(r'\w+')
         
         self.tweet_tokenized_train = [tokenizer.tokenize(x.lower()) for x in self.tweet_prepro_train]
-        self.tweet_tokenized_test = [tokenizer.tokenize(x.lower()) for x in self.tweet_prepro_test]
+        self.tweet_tokenized_test = [tokenizer.tokenize(x.lower()) for x in self.tweet_prepro_test]   
         
     def filtro_stopwords(self,lista_a_retener = []):
         
